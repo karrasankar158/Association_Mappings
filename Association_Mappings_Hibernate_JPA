@@ -14,6 +14,23 @@ Q) How to add Database and JPA properties in properties file or YML file?
    spring.jpa.show-sql=true
    spring.jpa.properties.hibernate.format_sql=true
 
+Understanding a few JPA Annotations:
+1.	@Entity : 
+   entity annotation is mapped with a database table.
+   It has one attribute name by using this attribute we can change the table name to our choice name.
+2.	@Table: 
+    we can change the table name, scheme, etc.
+3.	@Id: 
+   @Id is called the primary key.
+   Every table must and should have one primary key.
+   If we are using multiple @Id annotations in our entity class then it will be composite primary key.
+4. Composite Primary Key:
+    Composite primary key we can make by using multiple columns of a table.
+5.	drop VS truncate:
+   Truncate: truncate it will delete all rows from a table.
+   Drop: it will delete all rows and will delete table structure also. 
+
+
 
 
 
