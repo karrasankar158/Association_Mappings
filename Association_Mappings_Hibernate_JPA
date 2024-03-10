@@ -1,0 +1,19 @@
+Association Mappings in Hibernate and Spring boot JPA
+
+Q) How to create Spring Boot project by using Spring Initializer?
+A) Go through link: https://start.spring.io/
+Q) How to add Database and JPA properties in properties file or YML file?
+   #Database configuration properties
+   spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
+   spring.datasource.url=jdbc:mysql://localhost:3306/associtionmp
+   spring.datasource.username=root
+   spring.datasource.password=root
+
+   #JPA configuration properties:
+   spring.jpa.hibernate.ddl-auto=update
+   spring.jpa.show-sql=true
+   spring.jpa.properties.hibernate.format_sql=true
+
+
+
+
