@@ -30,6 +30,15 @@ Understanding a few JPA Annotations:
    Truncate: truncate it will delete all rows from a table.
    Drop: it will delete all rows and will delete table structure also. 
 
+    @GeneratedValue(strategy = GenerationType.IDENTITY)//MySQL recommended
+	//@GeneratedValue(strategy = GenerationType.SEQUENCE)//Oracle recommended
+   @Id
+	private Long id;
+    @Column(name = "sname",length = 40,nullable = false)
+	private String name;
+    @Column(name = "snum1")
+    private Long num1;
+
 
 
 
