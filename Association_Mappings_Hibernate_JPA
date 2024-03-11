@@ -39,6 +39,38 @@ Understanding a few JPA Annotations:
     @Column(name = "snum1")
     private Long num1;
 
+Q) what is FetchType?
+A When to load or retrieve the child record.
+  FetchType.LAZY: 
+    Child records will not come when you load parent records. 
+  FetchType.EAGER:
+    If we want to retrieve child records along with parents then we have to use them. 
+
+   @OneToOne default FetchType is EAGER
+   @OneToMany default FetchType is LAZY
+   @ManyToOne default FetchType is EAGER
+   @ManyToMany default FetchType is LAZY
+
+ Q) What is @JoinColumn?
+    A) It is a Foreign key column, the parent table primary key is a foreign key in the child table.
+
+ mappedBy:
+    HAS-A is a variable in the child entity reference variable name mapped to the parent HAS-A variable field. 
+
+What is cascade:
+Cascade.ALL
+Whatever operations are done by the parent will be reflected to the child.  
+
+What is an Orphan Record?
+A) If the child has no reference with the parent record then it is called an Orphan record.
+
+What is join?
+Retrieves the data from multiple tables at a time by using joins… joins supports only select statements. 
+In association mappings, while retrieving records internally left join is used. 
+
+
+
+
 
 
 
