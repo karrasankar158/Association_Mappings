@@ -55,7 +55,11 @@ A When to load or retrieve the child record.
     A) It is a Foreign key column, the parent table primary key is a foreign key in the child table.
 
  mappedBy:
-    For bidirectional communication, we can use mappedBy.  
+    For bidirectional communication, we can use mappedBy. 
+    Example: the foreign key will be in PanCard, referencing Person.
+    But in Person, you want referencing PanCard. So, you say to the JPA: 
+    I have this class Person with a relationship with PanCard, but it was created in PanCard. 
+     So mappedBy is just a reverse reference to get PanCard in this relationship. 
 
 What is cascade:
 Cascade.ALL
