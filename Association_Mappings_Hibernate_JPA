@@ -55,7 +55,7 @@ A When to load or retrieve the child record.
     A) It is a Foreign key column, the parent table primary key is a foreign key in the child table.
 
  mappedBy:
-    HAS-A is a variable in the child entity reference variable name mapped to the parent HAS-A variable field. 
+    For bidirectional communication, we can use mappedBy.  
 
 What is cascade:
 Cascade.ALL
@@ -67,6 +67,9 @@ A) If the child has no reference with the parent record then it is called an Orp
 What is join?
 Retrieves the data from multiple tables at a time by using joins… joins supports only select statements. 
 In association mappings, while retrieving records internally left join is used. 
+
+What is orphanRemoval=true:
+If any child has no parent then remove it. or Those who have foreign key null it removed. 
 
 
 
